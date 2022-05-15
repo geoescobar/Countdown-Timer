@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* body */
+body {
+  background-color: #191443;
+  color: #e34951;
+}
+
+.container {
+  margin: 15vh auto;
+  width: 25vw;
+}
+
+.display {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 80px;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.time-up {
+  font-size: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* buttons */
+.buttons {
+  padding: 0.8em 1.8em;
+  border: 2px solid #e34951;
+  position: relative;
+  /* margin: 25px 25px; */
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #e34951;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.buttons::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #e34951;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.buttons:hover::before {
+  width: 105%;
+}
+
+.buttons:hover {
+  color: #191443;
+}
+
+/* input box */
+.input {
+  padding: 0.8em 1.8em;
+  border: 2px solid #e34951;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  /* position: relative; */
+  /* overflow: hidden; */
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #e34951;
+  border-radius: 10px;
+}
+
+.search-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
