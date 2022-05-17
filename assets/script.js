@@ -1,6 +1,7 @@
 var myVar;
 var timer = document.getElementById("userInput");
 var stylesheet = document.getElementById("stylesheet");
+var timerr = document.getElementById("timerr");
 var countDownSeconds;
 function startTime() {
   myVar = setInterval(start, 1000);
@@ -10,10 +11,11 @@ function startTime() {
 
 function start() {
   countDownSeconds--;
-  document.getElementById("timerr").innerHTML = countDownSeconds;
+  timerr.innerHTML = countDownSeconds;
   if (countDownSeconds == 0) {
     stop();
-    document.getElementById("timerr").innerHTML = "Times Up";
+    timerr.innerHTML = "Times Up";
+    timerr.classList.add("animate__animated", "animate__headShake");
   }
 }
 
