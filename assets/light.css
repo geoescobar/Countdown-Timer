@@ -26,6 +26,9 @@ body {
   flex-wrap: wrap;
   font-size: 80px;
   text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .button {

@@ -24,8 +24,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 80px;
   text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .button {
@@ -36,9 +38,9 @@ body {
   padding: 10px;
 }
 
-.time-up {
-  font-size: 50px;
+#times-up {
   display: inline-block;
+  white-space: nowrap;
   text-align: center;
 }
 
