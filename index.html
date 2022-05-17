@@ -5,16 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus Timer</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link id="stylesheet" rel="stylesheet" href="./assets/light.css" />
   </head>
-  <body>
+  <body id="body">
+    <div class="nav-buttons">
+      <nav>
+        <button id="light" class="toggle" onclick="displayMode('./assets/light.css')">
+          <i class="bi bi-sun"></i></i>
+        </button>
+  
+        <button id="dark" class="toggle" onclick="displayMode('./assets/dark.css')">
+          <i class="bi bi-moon"></i></i>
+        </button>
+      </nav>
+    </div>
+  
+
     <div class="container">
       <div class="display">
         <h1 id="timerr" class="timer"></h1>
         <h1 id="times-up" class="time-up"></h1>
       </div>
 
-      <input class="input" id="userInput" type="number" placeholder="Enter Time" value="" />
+      <input
+        class="input"
+        id="userInput"
+        type="number"
+        placeholder="Enter Time"
+        value=""
+      />
       <div class="button">
         <button class="buttons" onclick="startTime()">Start</button>
         <button class="buttons" onclick="stop()">Stop</button>

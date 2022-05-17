@@ -1,5 +1,6 @@
 var myVar;
 var timer = document.getElementById("userInput");
+var stylesheet = document.getElementById("stylesheet");
 var countDownSeconds;
 function startTime() {
   myVar = setInterval(start, 1000);
@@ -18,4 +19,8 @@ function start() {
 
 function stop() {
   clearInterval(myVar);
+}
+
+function displayMode(sheet) {
+  stylesheet.href = sheet
 }

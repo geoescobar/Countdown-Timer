@@ -83,6 +83,7 @@ body {
 
 .buttons:hover {
   color: #191443;
+  cursor: pointer;
 }
 
 /* input box */
@@ -112,4 +113,26 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* light/dark mode buttons */
+.nav-buttons {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.toggle {
+  padding: 10px 10px;
+  font-size: larger;
+  border-radius: 10px;
+  border-color: #e34951;
+  background-color: #191443;
+  color: #e34951;
+}
+
+.toggle:hover {
+  cursor: pointer;
+  background-color: #e34951;
+  color: #191443;
 }
