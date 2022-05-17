@@ -22,5 +22,15 @@ function stop() {
 }
 
 function displayMode(sheet) {
+
   stylesheet.href = sheet
+  localStorage.setItem('display-mode', sheet)
+}
+
+var setDisplay = localStorage.getItem("display-mode");
+
+if (setDisplay === null) {
+  displayMode("./assets/light.css");
+} else {
+  displayMode(setDisplay);
 }
